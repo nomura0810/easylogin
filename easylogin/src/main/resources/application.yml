@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    cache: false  #thymeleafのキャッシュを無効に設定     
+  jmx:
+    enabled: false
+ 
+  #データベース接続の各種設定   
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot1?serverTimezone=Asia/Tokyo
+    username: root
+  
+#データベースとJavaオブジェクトをマッピングするための設定
+#mapUnderscoreToCamelCase を true で設定することで、user_nameなどの
+#アンダーバー区切りの名前が、userName(キャメル記法)に自動的に変換される
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true 

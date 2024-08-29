@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--Thymeleafを使うことをブラウザに知らせるための属性を追加 -->
+<html xmlns:th="www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  
+  <form name="loginForm" action="./login">
+    <!-- fomrタグは formタグ内のinputタグに入力された情報を 
+         action属性に指定した場所に送る (submitが実行)
+    　　 ./loginは今いる場所に+してloginを追加-->
+    
+    <div>
+      <span>ユーザー名</span>
+      <input type="text" name="userName" />
+    </div>
+    
+    <div>
+      <span>パスワード</span>
+      <input type="password" name="password" />
+    </div>
+    
+    <button type="submit">ログイン</button>
+  </form>
+
+</body>
+</html>
